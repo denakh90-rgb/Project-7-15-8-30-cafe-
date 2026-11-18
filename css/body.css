@@ -196,6 +196,14 @@ body {
 
     .hero-image {
         min-height: 360px;
+        background: url(../image/coffee.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .hero-image::before {
+        background: linear-gradient(to bottom, #221510 0%, transparent 40%);
     }
 
     .scroll span {
