@@ -36,6 +36,7 @@ footer {
     align-items: center;
     margin-top: 65px;
     gap: 10px;
+    color: black;
 }
 
 .subscribe label {

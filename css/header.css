@@ -43,7 +43,7 @@ header {
 .top-search a {
     text-decoration: none;
     color: #17233f;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .top-search input {
@@ -54,40 +54,56 @@ header {
     outline: none;
     text-align: center;
     font-size: 14px;
+    
 }
 
 .navbar {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 8%;
     min-height: 65px;
+    gap: 10px;
+    font-size: 0.5rem;
 }
-
+/* add the fixed bar on the top  */
+.nav-wrap{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: #fff;
+}
 .navbar a {
     text-decoration: none;
     color: #17233f;
     font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 2px;
     white-space: nowrap;
 }
 
 .navbar a i {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .navbar a:hover {
     color: #c69a55;
 }
-
+/* increse the margin */
 .nav-line {
+    position: relative;
     width: 90%;
     height: 2px;
     background-color: #17233f;
     margin: 0 auto;
-    position: relative;
+    margin-bottom: 10px;
+}
+/* respone to on phone */
+@media (max-width:600px){
+    .nav-wrap{
+        position: static;
+    }
 }
 
 @media (max-width: 900px) {
