@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17233f;
+    background-color: white;
+}
+.top-search button,
+.subscribe button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #17233f;
+    border-radius: 50%;
+    background: white;
+    color: #17233f;
+    cursor: pointer;
+    margin-left: 10px;
+}
