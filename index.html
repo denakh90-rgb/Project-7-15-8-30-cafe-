@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/menu-card.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- close this link to access with bootstap -->
-    <!-- <link rel="stylesheet" href="css/body.css"> -->
+    <link rel="stylesheet" href="css/body.css">  
     <!-- added link bootstap to work with bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
@@ -54,14 +54,15 @@
     <div class="nav-line"></div>
     <main>
         <!-- started with this first -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Coffee roasted the slow way, poured the warm way.</h1>
-                <p>We source single-origin greens from growers we know by name, roast them in small batches on Kiln
+        <section class="d-flex">
+            <div class="hero-text bg-subtle-warning">
+                <h1>Coffee roasted the <span class="fg-emphasis-warning">slow</span> way, poured the warm way.</h1>
+                <p class="fg-emphasis-warning">We source single-origin greens from growers we know by name, roast them
+                    in small batches on Kiln
                     Street, and brew them across the counter the same week. No shortcuts, no burnt bitterness — just
                     honest, seasonal coffee.</p>
                 <div class="buttons">
-                    <a href="#" class="btn btn-primary">
+                    <a href="#" class="btn-solid theme-success">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M5 8h14l-1 12H6L5 8Z" />
@@ -69,28 +70,33 @@
                         </svg>
                         Shop beans
                     </a>
-                    <a href="#menu" class="btn btn-outline">View cafè menu</a>
+                    <a href="#menu" class="btn-subtle theme-warning">View cafè menu</a>
                 </div>
 
-                <div class="stats">
-                    <div class="stat">
-                        <strong>12</strong>
+                <div class="d-flex flex-row fg-emphasis-warning justify-content-between">
+                    <div class="d-flex flex-column">
+                        <strong class="fs-xl">12</strong>
                         <span>Single origins a year</span>
                     </div>
-                    <div class="stat">
-                        <strong>48h</strong>
+                    <div class="d-flex flex-column">
+                        <strong class="fs-xl">48h</strong>
                         <span>Roast-to-shelf</span>
                     </div>
-                    <div class="stat">
-                        <strong>2</strong>
+                    <div class="d-flex flex-column">
+                        <strong class="fs-xl">2</strong>
                         <span>Neighbourhood cafè</span>
                     </div>
                 </div>
             </div>
-            <div class="hero-image"></div>
+            <div class="" style="
+                 background: url(../image/coffee.jpg) center / cover no-repeat,
+        radial-gradient(circle at 30% 30%, #7a4a2b 0 8%, transparent 9%) 0 0 / 70px 70px,
+        radial-gradient(circle at 70% 70%, #5a3320 0 10%, transparent 11%) 0 0 / 90px 90px,
+        #3a2416;">imageafjaofiajfoiajfaowifjafjaoifjafjaofijafoafaifheaiufhaoifaj
+        </div>
         </section>
-        <div class="strip">
-            <div class="scroll">
+        <div class="strip m-10">
+            <div class="scroll bg-success p-2">
                 <span>Direct-trade greens</span>
                 <span>Slow-bar pour overs</span>
                 <span>House-baked pastries</span>
@@ -102,6 +108,8 @@
             </div>
         </div>
     </main>
+    <!-- end here -->
+
 
     <section id="menu" class="menu-card-section">
         <div class="menu-card-grid">
