@@ -54,7 +54,7 @@ header {
     outline: none;
     text-align: center;
     font-size: 14px;
-    
+
 }
 
 .navbar {
@@ -66,13 +66,15 @@ header {
     gap: 10px;
     font-size: 0.5rem;
 }
+
 /* add the fixed bar on the top  */
-.nav-wrap{
+.nav-wrap {
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
     background-color: #fff;
 }
+
 .navbar a {
     text-decoration: none;
     color: #17233f;
@@ -90,6 +92,7 @@ header {
 .navbar a:hover {
     color: #c69a55;
 }
+
 /* increse the margin */
 .nav-line {
     position: relative;
@@ -99,10 +102,13 @@ header {
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
 /* respone to on phone */
-@media (max-width:600px){
-    .nav-wrap{
+@media (max-width:600px) {
+    .nav-wrap {
         position: static;
+        flex-wrap: nowrap;
+       
     }
 }
 

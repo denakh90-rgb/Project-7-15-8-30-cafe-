@@ -176,7 +176,7 @@ body {
     }
 
     .buttons {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 14px;
         margin-left: 10px;
     }
@@ -203,7 +203,7 @@ body {
     }
 
     .hero-image::before {
-        background: linear-gradient(to bottom, #221510 0%, transparent 40%);
+        background: linear-gradient(to bottom, #221510 0%, transparent 35%);
     }
 
     .scroll span {
